@@ -23,13 +23,18 @@ ul li{
 
 
 .block1{
-    padding: 10px 250px 10px 100px;
-    background-color:rgba(255,255,255, 0.63);
+    padding: 10px;
+    background-color:rgba(255,255,255, 0.35);
     right: 0;
     left: 0;
     position: absolute;
     z-index: 99;
 }
+.block1-width{
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
 .menu-left{
     float: left;
     display: inline-block;
@@ -51,6 +56,7 @@ ul li{
     color: white;
     text-transform: uppercase;
     margin-top: 12px;
+    margin-right: 150px;
 }
 .home-list{
     float: left;
@@ -74,7 +80,7 @@ ul li{
 }
 
 
-                               /*BLOCK2*/
+                                       /*BLOCK2*/
 
 
 .block2{
@@ -84,13 +90,77 @@ ul li{
     height:900px;
     width: 100%;
 }
+.block2-bg-s{
+    background: url("../image/bg-s.png") top center no-repeat #0d6cb6;
+    top:-90px;
+    position:absolute;
+    height:990px;
+    width: 100%;
+    opacity:0.6;
+}
+.block2-right-bg{
+    height: 540px;
+    width: 975px;
+    background:black;
+    opacity:0.1;
+    position: absolute;
+    top:360px;
+    right: 0;
+}
+.block2-text{
+    height: 900px;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top:0;
+}
+.block2-text h1{
+    text-align: center;
+    font-size: 149px;
+    font-family: 'BRUSHSTRIKE',sans-serif;
+    margin-top: 350px;
+    letter-spacing: 5px;
+}
+.block2-text h2{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Bebas Neue',sans-serif;
+    margin-top:80px;
+    letter-spacing: 5px;
+}
+.block2-icons{
+    float: right;
+    margin-top:15px;
+    margin-right: 500px;
+}
+.icon-left{
+    float: left;
+    font-size: 50px;
+    padding:5px 20px;
+    border-right: 2px solid black;
+}
+.icon-left:hover{
+    color:red;
+}
+.icon-right{
+    float: left;
+    font-size: 50px;
+    padding:5px 20px;
+}
+.icon-right:hover{
+    color:red;
+}
+.fa{
+    cursor: pointer;
+}
 
 
                                       /*BLOCK 3*/
 
 
 .block3{
-    padding: 70px ;
+    padding: 70px 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -164,10 +234,11 @@ ul li{
 
 
 .block5 {
-    padding:60px 100px 60px 200px;
+    padding:60px 100px;
     background-color: #f3f3f3;
 }
 .game-changer{
+    padding-left: 100px;
     float: left;
     text-transform: uppercase;
 }
@@ -202,7 +273,9 @@ ul li{
 .game-changer a{
     display: inline-block;
     color: #010101;
-    font: 600 32px "MyriadProSemiBold", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    font-family:'Myriad Pro', sans-serif ;
     text-decoration: none;
     border-radius: 54px;
     border: 2px solid #056cb6;
@@ -412,7 +485,7 @@ ul li{
 }
 
 
-                                      /*BLOCK 8*/
+                                  /*BLOCK 8*/
 
 
 .block8{
@@ -428,6 +501,16 @@ ul li{
     width: 602px;
     background: url(../image/block8-left.png) bottom center no-repeat black;
     background-size: 100%;
+    position: relative;
+}
+.block8-left-bg{
+    position: absolute;
+    background: url(../image/block8-bg.png) bottom right no-repeat;
+    opacity:1 ;
+    width: 602px;
+    height: 497px;
+    background-size:50% 100%;
+    top:86px;
 }
 .block8-title {
     font-family: 'ChunkFive',sans-serif;
@@ -457,13 +540,32 @@ ul li{
     width: 602px;
     background: url(../image/block8-center.png) center center no-repeat #010101;
     background-size: 100% 84%;
+    position: relative;
+}
+.block8-center-bg{
+    position: absolute;
+    background: url(../image/block8-bg.png) bottom right no-repeat;
+    opacity:1 ;
+    width: 602px;
+    height: 497px;
+    background-size:50% 100%;
+    top:86px;
 }
 .block8-right{
     width: 601px;
     background: url(../image/block8-right.png) bottom center no-repeat black;
     background-size: 100%;
+    position: relative;
 }
-
+.block8-right-bg{
+    position: absolute;
+    background: url(../image/block8-bg.png) bottom right no-repeat;
+    opacity:1 ;
+    width: 601px;
+    height: 497px;
+    background-size:50% 100%;
+    top:86px;
+}
 
                                  /*BLOCK9*/
 
@@ -589,8 +691,8 @@ ul li{
     color: red;
 }
 .footer-top-right{
-    float: left;
-    margin-left: 40px;
+    float: right;
+
 }
 .footer-top-right h2{
     font-size: 14px;
@@ -601,8 +703,8 @@ ul li{
     font-size: 13px;
     color: white;
 }
-.contact-list li {
-    margin-right: 15px;
+.contact-list-margin{
+    margin-left: 15px;
 }
 .title{
     font-size: 14px;
